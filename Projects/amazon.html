@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --amazon-yellow: #FEBD69;
+            --amazon-orange: #F4A847;
+            --amazon-dark: #131921;
+            --amazon-light: #232F3E;
+            --amazon-blue: #007185;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #E3E6E6;
+        }
+
+        /* Header Styles */
+        .header-top {
+            background-color: var(--amazon-dark);
+            color: white;
+            padding: 8px 0;
+        }
+
+        .header-bottom {
+            background-color: var(--amazon-light);
+            color: white;
+            padding: 8px 0;
+        }
+
+        .search-box {
+            background-color: var(--amazon-yellow);
+            border: none;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-size: 0.9rem;
+        }
+
+        .nav-link small {
+            font-size: 0.75rem;
+            color: #ccc;
+        }
+
+        /* Location Bar */
+        .location-bar {
+            background-color: var(--amazon-light);
+            color: white;
+            padding: 8px 16px;
+        }
+
+        /* Product Card */
+        .product-card {
+            background-color: white;
+            padding: 20px;
+            height: 100%;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+
+        .amazon-button {
+            background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+            border-color: #a88734 #9c7e31 #846a29;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: 1px;
+            color: #111;
+            font-size: 0.9rem;
+            padding: 6px 12px;
+        }
+
+        /* Carousel */
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        /* Category Card */
+        .category-card {
+            background-color: white;
+            padding: 15px;
+            margin-bottom: 20px;
+            height: 420px;
+        }
+
+        .category-card img {
+            width: 100%;
+            height: 280px;
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer-top {
+            background-color: var(--amazon-light);
+            color: white;
+            padding: 40px 0;
+        }
+
+        .footer-bottom {
+            background-color: var(--amazon-dark);
+            color: white;
+            padding: 20px 0;
+            font-size: 0.8rem;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-top">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <img src="/api/placeholder/100/30" alt="Amazon.in" class="img-fluid">
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group">
+                            <select class="form-select" style="max-width: 120px;">
+                                <option>All</option>
+                                <option>Electronics</option>
+                                <option>Fashion</option>
+                            </select>
+                            <input type="text" class="form-control" placeholder="Search Amazon.in">
+                            <button class="btn search-box">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <nav class="nav justify-content-end">
+                            <a class="nav-link" href="#">
+                                <small>Hello, Sign in</small><br>
+                                Account & Lists
+                            </a>
+                            <a class="nav-link" href="#">
+                                <small>Returns</small><br>
+                                & Orders
+                            </a>
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-shopping-cart"></i> Cart
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-bottom">
+            <div class="container-fluid">
+                <nav class="nav">
+                    <a class="nav-link" href="#"><i class="fas fa-bars"></i> All</a>
+                    <a class="nav-link" href="#">Amazon miniTV</a>
+                    <a class="nav-link" href="#">Sell</a>
+                    <a class="nav-link" href="#">Best Sellers</a>
+                    <a class="nav-link" href="#">Today's Deals</a>
+                    <a class="nav-link" href="#">Mobiles</a>
+                    <a class="nav-link" href="#">Customer Service</a>
+                    <a class="nav-link" href="#">Electronics</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Location Bar -->
+    <div class="location-bar">
+        <i class="fas fa-map-marker-alt"></i> Deliver to - Select your location
+    </div>
+
+    <!-- Main Content -->
+    <main class="container-fluid py-3">
+        <!-- Carousel -->
+        <div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/api/placeholder/1200/300" alt="Promotion 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="/api/placeholder/1200/300" alt="Promotion 2">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="row g-3">
+            <!-- Category Card 1 -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <h5>Up to 70% off | Clearance store</h5>
+                    <img src="/api/placeholder/200/200" alt="Electronics">
+                    <a href="#" class="text-decoration-none">See more</a>
+                </div>
+            </div>
+            
+            <!-- Category Card 2 -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <h5>Bluetooth Calling Smartwatch starts at ₹1,999</h5>
+                    <img src="/api/placeholder/200/200" alt="Smartwatch">
+                    <a href="#" class="text-decoration-none">See more</a>
+                </div>
+            </div>
+            
+            <!-- Category Card 3 -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <h5>Up to 60% off | Styles for men</h5>
+                    <img src="/api/placeholder/200/200" alt="Men's Fashion">
+                    <a href="#" class="text-decoration-none">See more</a>
+                </div>
+            </div>
+            
+            <!-- Category Card 4 -->
+            <div class="col-md-3">
+                <div class="category-card">
+                    <h5>Starting ₹199 | Home & kitchen</h5>
+                    <img src="/api/placeholder/200/200" alt="Home & Kitchen">
+                    <a href="#" class="text-decoration-none">See more</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Today's Deals Section -->
+        <div class="bg-white p-3 mt-4">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Today's Deals</h4>
+                <a href="#" class="text-decoration-none">See all deals</a>
+            </div>
+            <div class="row g-3">
+                <div class="col-md-2">
+                    <div class="text-center">
+                        <img src="/api/placeholder/150/150" alt="Deal 1" class="img-fluid mb-2">
+                        <span class="badge bg-danger">Up to 50% off</span>
+                        <p class="mb-0">Deal of the day</p>
+                    </div>
+                </div>
+                <!-- Add more deal items here -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <h6>Get to Know Us</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Press Releases</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Connect with Us</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Make Money with Us</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Sell on Amazon</a></li>
+                            <li><a href="#">Become an Affiliate</a></li>
+                            <li><a href="#">Advertise Your Products</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h6>Let Us Help You</h6>
+                        <ul class="footer-links">
+                            <li><a href="#">Your Account</a></li>
+                            <li><a href="#">Returns Centre</a></li>
+                            <li><a href="#">100% Purchase Protection</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p class="mb-0">© 1996-2025, Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
